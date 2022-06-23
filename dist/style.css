@@ -6,11 +6,22 @@ h1 {
     padding: 5px; 
 }
 
-.card-title {
+.card-body {
     background-color: rgb(97, 97, 243); 
     font-weight: bolder;
 }
 
 .card {
     text-align: center; 
+    display: inline-block; 
+    padding: 5px;
+    margin: 5px; 
+}
+
+.card-holder {
+    display: flex; 
+    justify-content: center;
+    padding: 5px; 
+    margin: 5px; 
+    flex-wrap: wrap;
 }
