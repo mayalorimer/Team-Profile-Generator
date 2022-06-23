@@ -29,7 +29,7 @@ const makeTeam = team => {
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${engineer.name}</li>
-        <li class="list-group-item">Github: ${engineer.github}</li>
+        <a href="https://github.com/${engineer.github}" target="_blank"><li class="list-group-item">Github: ${engineer.github}</li></a>
         <a href="mailto:${engineer.email}"> <li class="list-group-item">Email: ${engineer.email}</li></a>
       </ul>
       </div>
