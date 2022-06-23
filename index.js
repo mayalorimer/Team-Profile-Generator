@@ -4,6 +4,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 //import fs from 'fs'; 
 const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
 const renderTeam = require("./src/html-templates");
 
 const teamMemberObjArr = [];
