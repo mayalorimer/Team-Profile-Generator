@@ -1,0 +1,16 @@
+h1 {
+    background-color: pink;
+    size: 40px; 
+    text-align: center; 
+    margin: 5px;
+    padding: 5px; 
+}
+
+.card-title {
+    background-color: rgb(97, 97, 243); 
+    font-weight: bolder;
+}
+
+.card {
+    text-align: center; 
+}
