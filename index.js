@@ -1,6 +1,8 @@
 //hold info for questions
 const inquirer = require('inquirer');
+//import inquirer from 'inquirer'; 
 const fs = require('fs');
+//import fs from 'fs'; 
 const Manager = require('./lib/manager');
 const renderTeam = require("./src/html-templates");
 
