@@ -6,7 +6,7 @@ const fs = require('fs');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
-const renderTeam = require("./src/html-templates");
+const makeTeam = require("./src/html-templates");
 
 const teamMemberObjArr = [];
 
@@ -133,7 +133,9 @@ const init = () => {
 
 
     function buildTeam(){
-        fs.writeFile("./dist/index.html", renderTeam(teamMemberObjArr), "utf-8")
+        fs.writeFile("./dist/index.html", makeTeam(teamMemberObjArr), (err) =>
+        err ? console.log(err) : console.log('Success!')
+        );
     }
 
     createManager();
@@ -141,3 +143,4 @@ const init = () => {
 };
 
 init();
+
