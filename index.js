@@ -95,6 +95,38 @@ const init = () => {
         })
     }
 
+    function createIntern() {
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'name', 
+                message: 'What is the interns name?',
+            },
+            {
+                type: 'input',
+                name: 'id', 
+                message: 'What is the interns id',
+            },
+            {
+                type: 'input',
+                name: 'email', 
+                message: 'What is the inters email',
+            },
+            {
+                type: 'input',
+                name: 'school', 
+                message: 'What is the interns school?',
+            },
+        ])
+        .then(answers => {
+            const intern = new Intern(
+                answers.id, answers.name, answers.email, answers.school
+            )
+            teamMemberObjArr.push(intern);
+            addEmployees()
+        })
+    }
+
 
     function buildTeam(){
         fs.writeFile("./dist/index.html", renderTeam(teamMemberObjArr), "utf-8")
